@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <base href='../'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type"text/css" href="public/css/reset.css">
+    <link rel="stylesheet" type"text/css" href="public/css/gitstalk.css">
+  </head>
+
+  <body>
+    <h1>Gitstalk</h1>
+    <form class="gitstalk">
+      <input class="username" placeholder="Enter GitHub username">
+      <button type="submit">Load</button>
+    </form>
+
+    <main class="container">
+    </main>
+    <template>
+      <article class="profile">
+        <section class="pic">
+        <img src={{avatar_url}}>
+        </section>
+
+        <section class="stats">
+        <a href={{http_url}}>{{login}}</a>
+        <strong>Repos: {{public_repos}}</strong>
+        <strong>Followers: {{followers}}</strong>
+        </section>
+      </article>
+    </template>
+  </main>
+
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/mustache.js"></script>
+    <script src="lib/gitstalk.js"></script>
+
+  </body>
+</html>
+
+
+    
